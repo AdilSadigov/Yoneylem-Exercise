@@ -180,13 +180,11 @@ console.log(allIntersections)
 
 
 let constraintPoints = [[0, 0]]
-
 let flattedYzeros = yZeros.flat().filter(num => num !== 0)
 let minYzero = Math.min(...flattedYzeros)
 
 let flattedXzeros = xZeros.flat().filter(num => num !== 0)
 let minXzero = Math.min(...flattedXzeros)
-
 let minIntersection = []
 
 
@@ -195,13 +193,11 @@ for (let i = 0; i < intersection.length; i++) {
 }
 
 let minIntersectionIndex = minIntersection.indexOf(Math.min(...minIntersection))
-
 constraintPoints.push([minYzero, 0], [0, minXzero])
 
 if (intersection.length !== 0) {
   constraintPoints.push(intersection[minIntersectionIndex])
 }
-
 console.log(constraintPoints)
 
 

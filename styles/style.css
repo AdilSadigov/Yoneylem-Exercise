@@ -23,6 +23,7 @@ body .content #constPoints h2 {
 }
 body .graph-box {
   position: relative;
+  margin-left: 16px;
 }
 body .graph-box #x2 {
   position: absolute;
@@ -44,7 +45,6 @@ body .graph-box #graph-container {
   position: relative;
   width: 600px;
   height: 600px;
-  margin-left: 10px;
 }
 body .graph-box #graph-container .axis {
   position: absolute;
