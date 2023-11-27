@@ -1,27 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
+  margin: 0;
   display: flex;
   margin-top: 20px;
 }
 body .content {
   margin-left: 80px;
 }
-body #graph-container {
+body .content #results {
+  margin-top: 30px;
+}
+body .content #gy {
+  margin-bottom: 30px;
+}
+body .content #constPoints h2 {
+  margin-top: 30px;
+  margin-bottom: 5px;
+}
+body .graph-box {
+  position: relative;
+}
+body .graph-box #x2 {
+  position: absolute;
+  top: 0;
+  left: 51%;
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+body .graph-box #x1 {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+body .graph-box #graph-container {
   position: relative;
   width: 600px;
   height: 600px;
-  border: 1px solid #ccc;
+  margin-left: 10px;
 }
-body #graph-container .axis {
+body .graph-box #graph-container .axis {
   position: absolute;
   background-color: #000;
 }
-body #graph-container .x-axis {
+body .graph-box #graph-container .x-axis {
   width: 100%;
   height: 1px;
   left: 0;
   bottom: calc(50% - 0.5px);
 }
-body #graph-container .y-axis {
+body .graph-box #graph-container .y-axis {
   width: 1px;
   height: 100%;
   left: calc(50% - 0.5px);

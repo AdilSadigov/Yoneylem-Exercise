@@ -1,34 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
+  margin: 0;
   display: flex;
   margin-top: 20px;
 
   .content {
     margin-left: 80px;
+
+    #results {
+      margin-top: 30px;
+    }
+
+    #gy {
+      margin-bottom: 30px;
+    }
+
+    #constPoints {
+
+      h2 {
+        margin-top: 30px;
+        margin-bottom: 5px;
+      }
+    }
   }
 
-  #graph-container {
+  .graph-box {
     position: relative;
-    width: 600px;
-    height: 600px;
-    border: 1px solid #ccc;
 
-    .axis {
+    #x2 {
       position: absolute;
-      background-color: #000;
+      top: 0;
+      left: 51%;
+      margin: 0;
+      font-size: 18px;
+      font-weight: 600;
     }
 
-    .x-axis {
-      width: 100%;
-      height: 1px;
-      left: 0;
-      bottom: calc(50% - 0.5px);
+    #x1 {
+      position: absolute;
+      top: 50%;
+      right: 0;
+      margin: 0;
+      font-size: 18px;
+      font-weight: 600;
     }
-    
-    .y-axis {
-      width: 1px;
-      height: 100%;
-      left: calc(50% - 0.5px);
-      bottom: 0;
+
+    #graph-container {
+      position: relative;
+      width: 600px;
+      height: 600px;
+      margin-left: 10px;
+
+      .axis {
+        position: absolute;
+        background-color: #000;
+      }
+  
+      .x-axis {
+        width: 100%;
+        height: 1px;
+        left: 0;
+        bottom: calc(50% - 0.5px);
+      }
+      
+      .y-axis {
+        width: 1px;
+        height: 100%;
+        left: calc(50% - 0.5px);
+        bottom: 0;
+      }
     }
   }
 }

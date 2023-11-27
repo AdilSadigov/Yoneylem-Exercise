@@ -7,16 +7,27 @@
     <link rel="stylesheet" href="styles/style.css">
   </head>
   <body>  
-    <div id="graph-container">
-      <div class="axis x-axis"></div>
-      <div class="axis y-axis"></div>
+    <div class="graph-box">
+      <p id="x2">x2</p>
+      <p id="x1">x1</p>
+      <div id="graph-container">
+        <div class="axis x-axis"></div>
+        <div class="axis y-axis"></div>
+      </div>
     </div>
-    <div class="content">
-      <h2>Grafik Yöntemi</h2>
-      <h3>z=x1 + 2x max</h3>
-      <h3>x1 + 3x2 ≤ 3 (1)</h3>
-      <h3>2x1 + x2 ≤ 2 (2)</h3>
-      <h3>3x1 + x2 ≤ 3 (3)</h3>
+    <div id="content" class="content">
+      <h2 id="gy">Grafik Yöntemi</h2>
+      <h3>z=x1 + 2*x2 max</h3>
+      <h3>x1 + 3*x2 ≤ 3 (blue)</h3>
+      <h3>2*x1 + x2 ≤ 2 (red)</h3>
+      <h3>3*x1 + x2 ≤ 3 (green)</h3>
+      <div id="constPoints">
+        <h2>Kısıt Noktaları:</h2>
+      </div>
+      <div id="results">
+        <h3>Z max value = <span id="zMaxValue"></span></h3>
+        <h3>Z min value = <span id="zMinValue"></span></h3>
+      </div>
     </div>
     <script src="scripts/index.js"></script>
   </body> 
